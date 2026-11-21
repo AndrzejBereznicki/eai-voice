@@ -1,0 +1,20 @@
+{
+  "name": "eai-voice",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Paperclip plugin: dyktowanie zadań/komentarzy i czytanie komentarzy na głos po polsku, Web Speech API",
+  "type": "module",
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker.js",
+    "ui": "./dist/ui/"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/worker.test.mjs"
+  },
+  "devDependencies": {
+    "@paperclipai/plugin-sdk": "2026.916.1",
+    "esbuild": "0.28.2"
+  }
+}
